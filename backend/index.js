@@ -23,7 +23,7 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });
-app.use(cors());
+app.use(cors({ origin: "http://flexflow.in/", credentials: true }));
 
 // /////////////////// test browser /////////
 // app.get("/", (req, res) => {
