@@ -1,0 +1,30 @@
+a {
+  text-decoration: none !important
+}
+
+.overflowx{
+overflow-x: hidden;
+}
+
+
+input::placeholder {
+  color: rgb(104, 104, 104) !important; /* Make placeholder text transparent */
+  /* filter: blur(5px);   Apply a blur effect to the transparent text */
+}
+
+textarea::placeholder {
+  color: rgb(104, 104, 104) !important; /* Make placeholder text transparent */
+  /* filter: blur(5px);   Apply a blur effect to the transparent text */
+}
+
+.error{
+  color: rgb(100, 0, 0);
+}
+.password-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  color: #999;
+}

@@ -1,0 +1,293 @@
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none !important;
+}
+
+.overflowx {
+  overflow-x: hidden;
+}
+.mobile-navlist {
+  list-style: none;
+  margin-top: 40px;
+}
+.mobile-navlist .mobile-nav-item {
+  padding: 7px 0;
+  border-top: 1px solid #c5c5c5;
+}
+.mobile-navlist .mobile-nav-item:last-child {
+  border-bottom: 1px solid #c5c5c5;
+}
+.header-mobile-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+  color: rgb(104, 104, 104) !important;
+  /* Make placeholder text transparent */
+  /* filter: blur(5px);   Apply a blur effect to the transparent text */
+}
+
+textarea::placeholder {
+  color: rgb(104, 104, 104) !important;
+  /* Make placeholder text transparent */
+  /* filter: blur(5px);   Apply a blur effect to the transparent text */
+}
+
+.error {
+  color: rgb(171 4 4);
+  font-size: 14px;
+}
+
+.image-previews {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.image-preview {
+  margin: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.password-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  height: 100vh;
+  /* Take up full viewport height */
+}
+
+.spinner-container .spinner-wrapper {
+  width: 96px;
+  /* Set desired width for the spinner */
+  height: 96px;
+  /* Set desired height for the spinner */
+}
+
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.loading.show {
+  display: block;
+}
+
+.spinner {
+  /* Style your spinner here */
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page-link {
+  background-color: #302e2e !important;
+  color: white !important;
+}
+
+.page-item.active .page-link {
+  background-color: #0a0a0a !important;
+  color: white !important;
+}
+
+/* Custom styles for the Gym Detail Component */
+
+.swiper-container {
+  width: 100%; /* Full width of the parent container */
+  height: auto; /* Automatically adjust height based on content */
+}
+
+.swiper-slide {
+  text-align: center; /* Center align slide content */
+}
+
+.curousalimage {
+  width: 100%; /* Ensure images fill the width of the slide */
+  height: auto;
+  border-radius: 20px;
+  height: 400px !important; /* Set a maximum height for images */
+  object-fit: cover; /* Maintain aspect ratio and cover the slide area */
+}
+
+.swiper-button-next {
+  display: none !important;
+}
+.swiper-button-prev {
+  display: none !important;
+}
+/* Optional: Styles for pagination bullets */
+.swiper-pagination {
+  position: relative;
+  bottom: 10px;
+}
+
+/* Optional: Customize pagination bullets */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.gymcards {
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+.card {
+  background-color: #333; /* Set card background color */
+  border: none; /* Remove card border */
+  border-radius: 10px; /* Apply border-radius to card */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.card-img-top {
+  height: 200px; /* Set fixed height for card image */
+  object-fit: cover; /* Maintain aspect ratio and cover image area */
+}
+
+.card-body {
+  padding: 20px; /* Add padding inside card body */
+}
+
+.card-title {
+  font-size: 18px; /* Set font size for card title */
+  margin-bottom: 10px; /* Add margin below card title */
+}
+
+.text-white {
+  color: #fff; /* Set text color to white */
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: rgb(
+    47,
+    0,
+    255
+  ) !important; /* Change the color of the toggle when it is checked */
+  /* border-color: green; Change the border color of the toggle when it is checked */
+}
+
+.custom-control-input:not(:checked) ~ .custom-control-label::before {
+  background-color: rgb(
+    73,
+    73,
+    75
+  ) !important; /* Change the background color of the toggle when it is not checked */
+  /* border-color: yellow; Change the border color of the checkbox when it is not checked */
+}
+
+.checkbox-outside-card.custom-control-input:not(:checked)
+  ~ .custom-control-label::after {
+  background-color: #ffffff !important; /* Change the background color of the radio button when it is checked */
+  /* border: 2px solid purple; Add a border if you prefer */
+}
+
+.form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%236f6b7d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='white' stroke-opacity='0.2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  display: block;
+  width: 100%;
+  padding: 0.422rem 2.45rem 0.422rem 0.875rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 13px;
+  appearance: none;
+  background: none !important;
+  background-color: none;
+  background-image: var(--bs-form-select-bg-img),
+    var(--bs-form-select-bg-icon, none);
+  background-repeat: no-repeat;
+  background-position: right 0.875rem center;
+  background-size: 22px 20px;
+  border: 1px solid #545455;
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-select {
+    transition: none;
+  }
+}
+
+.form-select:focus {
+  border-color: #7367f0;
+  outline: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
+}
+
+.form-select[multiple],
+.form-select[size]:not([size="1"]) {
+  padding-right: 0.875rem;
+  background-image: none;
+}
+
+.form-select:disabled {
+  color: #a5a3ae;
+  background-color: rgba(75, 70, 92, 0.08);
+}
+
+.form-select:-moz-focusring {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0 #6f6b7d;
+}
+
+.form-select-sm {
+  padding-top: 0.266rem;
+  padding-bottom: 0.266rem;
+  padding-left: 0.625rem;
+  font-size: 0.8125rem;
+  border-radius: var(--bs-border-radius-sm);
+}
+
+.form-select-lg {
+  padding-top: 0.594rem;
+  padding-bottom: 0.594rem;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  border-radius: var(--bs-border-radius-lg);
+}
